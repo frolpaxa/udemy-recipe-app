@@ -10,3 +10,4 @@ git commit -a
 python django run all test in files startwith test*.py
 docker-compose run app sh -c "python manage.py startapp core"
 docker-compose run app sh -c "python manage.py test"
+docker-compose run app sh -c "python manage.py test && flake8"
